@@ -47,8 +47,8 @@ It even does not do intialization by itself, it call special function in blurer.
   
 ## 4. How it parallelize  
 CUDA do this.  
-look blurKernel in blurer.cu  
-It kernel that are run many times on GPU in parallel.  
+See blurKernel in blurer.cu  
+It is kernel that are run many times on GPU in parallel.  
 The grid are defined by output. There is 1 run of blurKernel for a fixed pixel and fixed R G or B in output image.  
 It uses integer arithmetics (for speed),  
 convolution kernel has unsigned short int (16 bits) precission and input image pixel values are also converted to unsigned short int (16 bits) in calculation.  
