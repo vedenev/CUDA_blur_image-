@@ -1,5 +1,7 @@
 ## CUDA blur image  
 test task solved  
+Interviewer allowed me to put my solution into public access  
+ 
   
 ## 1. test task definition:  
 Let we have Python+Pytorch code (see research/test_task.py) that makes image blur. The task is to make CPU or GPU code that do the same.  
