@@ -28,7 +28,7 @@ Probably it is need to add more paramaters, I did't check.
   
 ## 2. Resuts of speed test  
 0.02513846206665039 sec as mean for one (RGB) image 1200x800  
-It is only timne for blur, time for intializations and for files reading/writing was not included.  
+It is only time for blur, time for intializations and for files reading/writing was not included.  
 Time for transfer image from CPU memory to GPU memory and back was included.  
 It was tested with hardware:  
 CPU: Intel Core 2 Quad Q8400  
@@ -57,10 +57,10 @@ min = -5
 max = 7  
 mean =  0.7363226188483967  
 std = 0.6413344010889628  
-Also convolution kernel values are stored in constant array, look '''__constant__''' unsigned short core_gpu в blurer.cu, it is for speed.  
+Also convolution kernel values are stored in constant array, look ```__constant__``` unsigned short core_gpu в blurer.cu, it is for speed.  
 Also the maixmal size of the constant array is 64x64, so maximal size of the convolution kernel is 64x64  
-It is possible to accelerate more with '''__shared__''' but I did't do it.  
-I used '''__shared__''' in my another project: https://github.com/vedenev/cpp_cuda_speedup_lenet  
+It is possible to accelerate more with ```__shared__``` but I did't do it.  
+I used ```__shared__``` in my another project: https://github.com/vedenev/cpp_cuda_speedup_lenet  
   
 ## 5. History of development  
 All intermidiate raw codes a placed in to research, look details at the end of this document.  
